@@ -1,4 +1,5 @@
-"use client";
+"use client"
+;
 import React, { useState, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -85,11 +86,11 @@ function ResidenciesSection() {
     <section id="residencies" className="py-16">
       <div className="px-4 sm:px-6 lg:px-8">
         {/* Logos Row */}
-        <div className="flex flex-col flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-10 mb-10">
+        <div className="flex flex-row flex-wrap justify-center items-center gap-8 mb-10">
           {logos.map((logo, idx) => (
             <motion.div
               key={idx}
-              className="flex flex-col items-center mx-2 sm:mx-4"
+              className="flex flex-col items-center"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
